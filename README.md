@@ -1,0 +1,148 @@
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Blog Basis Data — Post 1 & 2 Versi 1</title>
+  <style>
+    :root{
+      --bg-1:#071021;
+      --bg-2:#06132a;
+      --card:#071a2b;
+      --neon:#38b6ff;
+      --neon-2:#6ee7b7;
+      --muted:#9aa8bf;
+      --text:#e6f0ff;
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background:linear-gradient(180deg,var(--bg-1),var(--bg-2));
+      color:var(--text);
+      padding:28px;
+      -webkit-font-smoothing:antialiased;
+    }
+    .wrap{max-width:900px;margin:0 auto}
+    header{display:flex;gap:18px;align-items:center;margin-bottom:22px}
+    .profile-card{
+      background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01));
+      border-radius:var(--radius);
+      padding:16px;
+      box-shadow:0 6px 20px rgba(0,0,0,0.5);
+      border:1px solid rgba(56,182,255,0.1);
+    }
+    .avatar{
+      width:90px;height:90px;border-radius:14px;overflow:hidden;flex-shrink:0;
+      border:2px solid rgba(56,182,255,0.4);
+      box-shadow:0 0 12px rgba(56,182,255,0.3);
+    }
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    .meta h1{margin:0;font-size:20px;color:var(--neon)}
+    .meta p{margin:4px 0;color:var(--muted);font-size:13px}
+    .info{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+    .chip{background:rgba(56,182,255,0.1);border:1px solid rgba(56,182,255,0.25);padding:6px 10px;border-radius:999px;font-size:12px;color:var(--neon)}
+
+    .post{
+      background:linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02));
+      border-radius:var(--radius);
+      padding:18px;
+      margin-bottom:18px;
+      box-shadow:0 6px 20px rgba(0,0,0,0.5);
+      border:1px solid rgba(56,182,255,0.15);
+    }
+    .post h2{color:var(--neon);margin-top:0;font-size:18px}
+    .post p,.post li{color:var(--text);line-height:1.6}
+    .post ul{padding-left:20px;margin-top:6px}
+    .img-container{text-align:center;margin:16px 0;}
+    .img-container img{max-width:80%;
+  border-radius:10px;
+  box-shadow:0 0 20px rgba(56,182,255,0.25);
+  border:1px solid rgba(56,182,255,0.2);
+  transition:transform .3s ease;
+}
+    .img-container img:hover{
+      transform:scale(1.03);
+      box-shadow:0 0 25px rgba(56,182,255,0.4);}
+    .img-caption{
+      font-size:12px;
+      color:#9aa8bf;
+      margin-top:6px;
+      font-style:italic;}
+    .hero {text-align: center;margin-top: 20px;}
+    .hero iframe {
+      width: 100%;
+      max-width: 720px;
+      height: 405px;
+      border-radius: 12px;
+      border: none;
+      box-shadow: var(--card-shadow);}
+
+    footer{margin-top:20px;color:var(--muted);font-size:13px;text-align:center}
+    @media(max-width:600px){header{flex-direction:column;align-items:flex-start}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header class="profile-card">
+    <div class="avatar">
+      <img src="foto1.jpg" alt="Foto Profil" onerror="this.onerror=null;this.src='https://via.placeholder.com/90x90?text=Foto';">
+    </div>
+    <div class="meta">
+      <h1>NAUFAL HILMI HAFIZH</h1>
+      <p>NIM: 24416255201006 • Kelas: IF24F — Teknik Informatika</p>
+      <div class="info">
+        <span class="chip">Universitas Buana Perjuangan Karawang</span>
+        <span class="chip">Blog Basis Data</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+      <article class="post">
+        <h2>Post 1 : Contoh 5 Kasus Intersection</h2>
+        <h3>Mahasiswa mengambil Mata Kuliah</h3>
+        <div class="img-container">
+          <img src="tabel1.png" alt="Contoh relasi tabel database">
+          <p class="img-caption">Gambar: Contoh relasi tabel dengan Primary Key dan Foreign Key</p>
+        </div>
+        
+        <h3>Pegawai mengikuti Proyek</h3>
+        <div class="img-container">
+          <img src="tabel2.png" alt="Contoh relasi tabel database">
+          <p class="img-caption">Gambar: Contoh relasi tabel dengan Primary Key dan Foreign Key</p>
+        </div>
+        
+        <h3>Siswa mengikuti Ekstrakurikuler</h3>
+        <div class="img-container">
+          <img src="tabel3.png" alt="Contoh relasi tabel database">
+          <p class="img-caption">Gambar: Contoh relasi tabel dengan Primary Key dan Foreign Key</p>
+        </div>
+        
+        <h3>Supplier menyuplai Barang</h3>
+        <div class="img-container">
+          <img src="tabel4.png" alt="Contoh relasi tabel database">
+          <p class="img-caption">Gambar: Contoh relasi tabel dengan Primary Key dan Foreign Key</p>
+        </div>
+        
+        <h3>Dokter melayani Pasien</h3>
+        <div class="hero">
+            <iframe src="https://www.youtube.com/embed/SqyUI_sog28?si=nZSIy1HMOrnWq6iJ" 
+            title="YouTube video" allowfullscreen></iframe>
+        </div>
+      </main>
+    </article>
+
+    <article class="post">
+        <h2>Post 2: Apa Itu Normalisasi pada ERD?</h2>
+        <p><strong>Normalisasi</strong> adalah proses penyusunan tabel dalam database agar data tersimpan dengan efisien dan tidak terjadi pengulangan (redundansi).
+            Proses ini dilakukan setelah pembuatan ERD (Entity Relationship Diagram) untuk memastikan bahwa setiap data ditempatkan pada tabel yang tepat dan saling terhubung secara logis.</p> 
+        <ul>
+          <br>Tujuan utamanya adalah <strong>agar struktur database lebih rapi, konsisten, dan mudah dipelihara.</strong>
+        </ul>
+    </article>
+
+  <footer>&copy; 2025 — Naufal Hilmi Hafizh — Basis Data</footer>
+</div>
+</body>
+</html>
