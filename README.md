@@ -98,7 +98,6 @@
     </div>
   </header>
 
-  <main>
       <article class="post">
         <h2>Post 1 : Contoh 5 Kasus Intersection</h2>
         <h3>Mahasiswa mengambil Mata Kuliah</h3>
@@ -130,7 +129,6 @@
             <iframe src="https://www.youtube.com/embed/SqyUI_sog28?si=nZSIy1HMOrnWq6iJ" 
             title="YouTube video" allowfullscreen></iframe>
         </div>
-      </main>
     </article>
 
     <article class="post">
@@ -143,6 +141,3 @@
     </article>
 
   <footer>&copy; 2025 — Naufal Hilmi Hafizh — Basis Data</footer>
-</div>
-</body>
-</html>
